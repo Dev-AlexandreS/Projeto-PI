@@ -1,0 +1,41 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 100vh;
+    width: 100vw;
+    margin-right: 20rem;
+}
+
+#mapa{
+    width: 50rem;
+    height: 30rem;
+    padding: 1.5rem;
+    background-color: #252525;
+    border-radius: 1rem;
+}
+
+.container-info{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.header-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 240px;
+}
+
+.box-info{
+    padding: 2rem;
+    text-align: center;
+    background-color: #252525;
+}
+
+p, a, span {
+    font-size: 1.5rem;
+}
