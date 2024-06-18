@@ -14,7 +14,6 @@ def dadosArduino():
         return render_template("resultado.html", dados = dados)
 
 
-
 @app.route("/posto")
 def posto():
     return render_template("posto.html")
