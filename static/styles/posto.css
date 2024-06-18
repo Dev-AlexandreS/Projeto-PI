@@ -47,6 +47,7 @@ section{
     gap: 2rem;
     background-color: #252525;
     flex-direction: column;
+    justify-content: center;
     width: 10vw;
     height: 20vh;
     padding: 1rem;
