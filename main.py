@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,jsonify
 from auto import buscaDados
 
 app = Flask(__name__)
@@ -9,10 +9,14 @@ def home():
 
 @app.route("/dados")
 def dadosArduino():
-    while True:
-        dados = buscaDados()
-        return render_template("resultado.html", dados = dados)
+    return render_template("resultado.html")
 
+
+@app.route('/get_dados')
+def get_dados():
+    # Aqui você pode retornar os dados que deseja atualizar na div
+    dados = buscaDados()
+    return jsonify({'dados': dados})
 
 @app.route("/posto")
 def posto():
