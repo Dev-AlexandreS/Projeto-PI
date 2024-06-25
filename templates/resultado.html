@@ -29,6 +29,11 @@
                 .then(response => response.json()) // Extrai os dados da resposta como JSON
                 .then(data => {
                     // Atualiza o conteúdo da div "dados" com os novos dados recebidos
+                    if (data.dados >= 6){
+                        console.log("NÃO TA CARREGANDO")
+                    }else{
+                        console.log("TA CARREGANDO")
+                    }
                     document.getElementById('dados').textContent = data.dados;
                 })
                 .catch(error => {

@@ -3,7 +3,7 @@ import serial, time
 def buscaDados():
 
     try:
-        conn = serial.Serial('COM3',9600)
+        conn = serial.Serial('COM5',9600)
 
         print("conectado com a porta, ", conn.portstr)
 

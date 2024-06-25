@@ -3,29 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./static/styles/default.css" />
-    <link rel="stylesheet" href="./static/styles/nav.css" />
-    <link rel="stylesheet" href="./static/styles/posto.css" />
+    <link rel="stylesheet" href="../static/styles/default.css" />
+    <link rel="stylesheet" href="../static/styles/nav.css" />
+    <link rel="stylesheet" href="../static/styles/posto.css" />
     <script src="../static/js/posto.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <title>Posto</title>
-    <link rel="icon" href="./static/img/logo.png" />
+    <link rel="icon" href="../static/img/logo.png" />
   </head>
   <body>
     <nav>
       <div class="nav-item">
         <a href=""
-          ><img src="./static/img/logo.png" alt="Logo do sistema" id="nav-logo"
+          ><img src="../static/img/logo.png" alt="Logo do sistema" id="nav-logo"
         /></a>
         <a href=""><i class="bi bi-layout-text-window-reverse"></i></a>
         <a href=""><i class="bi bi-bar-chart"></i></a>
       </div>
-      <div class="nav-item">
+      <!-- <div class="nav-item">
         <a href=""><i class="bi bi-box-arrow-left"></i></a>
-      </div>
+      </div> -->
     </nav>
     
     <main>
@@ -47,6 +47,7 @@
 
           <div class="box-info">
             <h2>Nível de bateria</h2>
+            <input type="hidden" value="{{dados}}" id="dados">
             <div class="box-battery">
               <a id="nivelBattery" href=""><i class="bi bi-battery-full"></i></a>
           </div>
@@ -59,56 +60,93 @@
               <th>Data</th>
               <th>Porcentagem</th>
             </thead>
+            
             <tbody>
-                <tr class="line-data">
-                    <td>Civic</td>
-                    <td>13/06/2024</td>
-                    <td>80%</td>
-                </tr>
-                <tr class="line-data">
-                    <td>Civic</td>
-                    <td>13/06/2024</td>
-                    <td>80%</td>
-                </tr>
-                <tr class="line-data">
-                    <td>Civic</td>
-                    <td>13/06/2024</td>
-                    <td>80%</td>
-                </tr>
-                <tr class="line-data">
-                    <td>Civic</td>
-                    <td>13/06/2024</td>
-                    <td>80%</td>
-                </tr>
-                <tr class="line-data">
-                    <td>Civic</td>
-                    <td>13/06/2024</td>
-                    <td>80%</td>
-                </tr>
-                <tr class="line-data">
-                    <td>Civic</td>
-                    <td>13/06/2024</td>
-                    <td>80%</td>
-                </tr>
-                <tr class="line-data">
-                    <td>Civic</td>
-                    <td>13/06/2024</td>
-                    <td>80%</td>
-                </tr>
-                <tr class="line-data">
-                    <td>Civic</td>
-                    <td>13/06/2024</td>
-                    <td>80%</td>
-                </tr>
                 
-            </tbody>
+                <tr class="line-data">
+                  <td>marea</td>
+                  <td>13/06/2024</td>
+                    <td>80%</td>
+                </tr>
+                <tr class="line-data">
+                  <td>Civic</td>
+                  <td>13/06/2024</td>
+                  <td>80%</td>
+                </tr>
+                <tr class="line-data">
+                  <td>Civic</td>
+                  <td>13/06/2024</td>
+                  <td>80%</td>
+                </tr>
+                <tr class="line-data">
+                    <td>Civic</td>
+                    <td>13/06/2024</td>
+                    <td>80%</td>
+                </tr>
+                <tr class="line-data">
+                  <td>Civic</td>
+                  <td>13/06/2024</td>
+                  <td>80%</td>
+                </tr>
+                <tr class="line-data">
+                  <td>Civic</td>
+                  <td>13/06/2024</td>
+                  <td>80%</td>
+                </tr>
+                <tr class="line-data">
+                  <td>Civic</td>
+                  <td>13/06/2024</td>
+                    <td>80%</td>
+                  </tr>
+                  <tr class="line-data">
+                    <td>Civic</td>
+                    <td>13/06/2024</td>
+                    <td>80%</td>
+                </tr>
+                <tr class="line-data">
+                  <td>Civic</td>
+                  <td>13/06/2024</td>
+                    <td>80%</td>
+                  </tr>
+                <tr class="line-data">
+                    <td>Civic</td>
+                    <td>13/06/2024</td>
+                    <td>80%</td>
+                  </tr>
+                
+                <tr class="line-data">
+                    <td>Civic</td>
+                    <td>13/06/2024</td>
+                    <td>80%</td>
+                  </tr>
+                
+                <tr class="line-data">
+                    <td>Civic</td>
+                    <td>13/06/2024</td>
+                    <td>80%</td>
+                  </tr>
+                
+                <tr class="line-data">
+                    <td>Civic</td>
+                    <td>13/06/2024</td>
+                    <td>80%</td>
+                  </tr>
+                
+                <tr class="line-data">
+                    <td>Civic</td>
+                    <td>13/06/2024</td>
+                    <td>80%</td>
+                  </tr>
+                
+                
+              </tbody>
           </table>
         </div>
         </div>
       <div class="conteiner-2">
         <h2>Sobre</h2>
         <h3>Numero do ID: 1</h3>
-        <img src="./static/img/Postogaso.jpg" alt="" />
+        <img src="../static/img/Postogaso.jpg" alt="" />
         </div>
       </section>
     </main>
